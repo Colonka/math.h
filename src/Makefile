@@ -20,9 +20,6 @@ dvi:
 	mv html latex docs
 	open docs/html/index.html
 
-docs:
-	open docs/html/index.html
-
 test: s21_math.a test/test.c
 	gcc ${FLAGS} ${STD} -c test/test.c
 	gcc -fprofile-arcs -ftest-coverage -L. -ls21_math test.o -lcheck -lm -lpthread -o run_tests
@@ -41,4 +38,4 @@ gcov_report: test
 	gcovr -r . --html --html-details -o report/report.html
 
 clean:
-	rm -rf *.o *.gcov *.gcno *.gcda run_tests s21_math libs21_math.a report
+	rm -rf *.o *.gcov *.gcno *.gcda run_tests s21_math libs21_math.a report docs

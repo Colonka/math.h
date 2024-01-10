@@ -20,7 +20,7 @@ Being in math.h/src folder run command `make` in terminal that create static lib
 
 ## Documentation
 
-To open library documentation run command `make docs` in terminal being in math.h/src folder.
+To open library documentation run command `make dvi` in terminal being in math.h/src folder.
 
 ### Overview of some "math.h" functions
 
